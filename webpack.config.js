@@ -12,6 +12,7 @@ const config = {
   },
   devServer: {
     host: 'localhost',
+    watchFiles: ['index.html'],
   },
   plugins: [
     new HtmlWebpackPlugin({
