@@ -1,0 +1,53 @@
+$font-family-sans-serif: inter,
+	system-ui,
+	-apple-system,
+	"Segoe UI",
+	roboto,
+	"Helvetica Neue",
+	arial,
+	"Noto Sans",
+	"Liberation Sans",
+	sans-serif,
+	"Apple Color Emoji",
+	"Segoe UI Emoji",
+	"Segoe UI Symbol",
+	"Noto Color Emoji";
+
+/* colors */
+$primary: #5399df;
+$on-primary: #021a31;
+$surface: #0e1a25;
+$on-surface: #c7ccd1;
+$on-primary-container: #d8e6f3;
+
+$opacity-on-primary-08: rgba($on-primary, 0.08);
+$opacity-on-primary-16: rgba($on-primary, 0.16);
+
+$body-bg: $surface;
+$body-color: rgba($on-surface, 0.64);
+
+$headings-color: $on-surface;
+$headings-font-weight: 700;
+
+$font-size-base: 1rem;
+
+$h1-font-size: $font-size-base * 2;
+
+$spacer: 2px;
+$spacers: (
+	0: 0,
+	1: $spacer,
+	2: $spacer * 2,
+	3: $spacer * 4,
+	4: $spacer * 8,
+	5: $spacer * 12,
+	6: $spacer * 16,
+	7: $spacer * 20,
+	8: $spacer * 24,
+	9: $spacer * 28,
+	10: $spacer * 32,
+	11: $spacer * 36,
+	12: $spacer * 40,
+);
+
+$border-radius: 0.25rem;

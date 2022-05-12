@@ -1,0 +1,58 @@
+.btn {
+	position: relative;
+	z-index: 0;
+
+	display: inline-block;
+	padding: 8px 16px;
+
+	font-weight: 600;
+	font-size: 14px;
+	letter-spacing: 0.1px;
+
+	border-color: transparent;
+	border-style: solid;
+	border-width: 2px;
+	border-radius: $border-radius;
+	outline: none;
+
+	transition: $transition-base;
+
+	&::after {
+		position: absolute;
+		top: -2px;
+		right: -2px;
+		bottom: -2px;
+		left: -2px;
+		z-index: 1;
+
+		border-radius: $border-radius;
+		opacity: 0;
+
+		transition: $transition-base, $transition-fade;
+
+		content: "";
+	}
+
+	&:hover {
+		&::after {
+			opacity: 1;
+		}
+	}
+
+	&[disabled] {
+		color: rgba($on-surface, 0.32);
+
+		background: rgba($on-surface, 0.08);
+
+		border-color: transparent;
+
+		cursor: not-allowed;
+	}
+}
+
+.btn-primary {
+	@include rss-button-variant(
+		$primary,
+		$on-primary,
+	);
+}

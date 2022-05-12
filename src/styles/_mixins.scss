@@ -1,0 +1,25 @@
+@mixin rss-button-variant(
+	$bg,
+	$color,
+	$hover-bg: rgba($on-primary, 0.08),
+	$pressed-bg: rgba($on-primary, 0.16),
+	$focus-border-color: $on-primary-container,
+) {
+	color: $color;
+
+	background: $bg;
+
+	&::after {
+		background: $hover-bg;
+	}
+
+	&:focus {
+		&::after {
+			background: $pressed-bg;
+		}
+	}
+
+	&:focus-visible {
+		border-color: $focus-border-color;
+	}
+}
