@@ -12,16 +12,20 @@ const config = {
   },
   devServer: {
     host: 'localhost',
-    watchFiles: ['index.html'],
+    watchFiles: ['**/*.pug'],
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: 'index.html',
+      template: 'index.pug',
     }),
     new ESLintPlugin(),
   ],
   module: {
     rules: [
+      {
+        test: /\.pug$/i,
+        loader: 'pug-loader',
+      },
       {
         test: /\.(js|jsx)$/i,
         loader: 'babel-loader',
