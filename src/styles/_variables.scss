@@ -15,8 +15,9 @@ $font-family-sans-serif: inter,
 
 /* colors */
 $primary: #5399df;
-$on-primary: #021a31;
 $surface: #0e1a25;
+$secondary: #60809f;
+$on-primary: #021a31;
 $on-surface: #c7ccd1;
 $on-primary-container: #d8e6f3;
 
@@ -51,3 +52,14 @@ $spacers: (
 );
 
 $border-radius: 0.25rem;
+
+$input-padding-y: 12px;
+$input-padding-x: 16px;
+$input-border-color: rgba($secondary, 0.16);
+
+$input-placeholder-color: $on-surface;
+$input-color: $on-surface;
+
+$input-focus-border-color: $primary;
+$input-focus-box-shadow: 0 0 0 1px $primary inset;
+$input-hover-border-color: rgba($secondary, 64);
