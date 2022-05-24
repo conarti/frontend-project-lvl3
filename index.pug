@@ -1,3 +1,5 @@
+include ./src/components/icon
+
 doctype html
 head
   meta(charset='UTF-8')
@@ -8,7 +10,9 @@ head
   .row.justify-content-center.vh-100
     header.col-6.my-auto
       div
-        h1.mb-1 RSS агрегатор
+        h1.d-flex.align-items-center.mb-1
+          +icon('rss-icon-lg')
+          span.lh-sm RSS агрегатор
         p.mb-5 Начните читать RSS сегодня! Это легко, это красиво.
       form.d-flex
         label.visually-hidden(for='rss-url') Ссылка RSS
