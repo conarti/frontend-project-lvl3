@@ -9,5 +9,9 @@ mixin icon(name, size)
       return `${componentClass}-${size}`;
     }
 
-  svg.icon(class!=[attributes.class, getSizeClass()].join(' '))
+    function getClasses() {
+      return [attributes.class, getSizeClass()].join(' ');
+    }
+
+  svg.icon(class!=getClasses())
     use(xlink:href=`./sprite.svg#${name}`)
