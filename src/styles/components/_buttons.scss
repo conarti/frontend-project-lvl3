@@ -2,12 +2,14 @@
 	position: relative;
 	z-index: 0;
 
-	display: inline-block;
+	display: inline-flex;
+	align-items: center;
 	padding: 12px 24px;
 
 	font-weight: 600;
 	font-size: 12px;
 	letter-spacing: 0.5px;
+	column-gap: 12px;
 
 	border-color: transparent;
 	border-style: solid;
