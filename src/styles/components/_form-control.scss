@@ -3,13 +3,17 @@
 		border-color: $input-hover-border-color;
 	}
 
+	&::placeholder {
+		opacity: 0.32;
+	}
+
 	&:focus {
 		&:hover {
 			border-color: $input-focus-border-color;
 		}
-	}
 
-	&::placeholder {
-		opacity: 0.16;
+		&::placeholder {
+			opacity: 0.16;
+		}
 	}
 }
