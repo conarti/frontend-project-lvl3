@@ -1,6 +1,18 @@
 .icon {
-	width: 40px;
-	height: 40px;
-
 	fill: currentcolor;
+
+	&-sm {
+		width: 16px;
+		height: 16px;
+	}
+
+	&-md {
+		width: 24px;
+		height: 24px;
+	}
+
+	&-lg {
+		width: 40px;
+		height: 40px;
+	}
 }

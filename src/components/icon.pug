@@ -1,3 +1,13 @@
-mixin icon(name)
-  svg.icon(class!=attributes.class)
+mixin icon(name, size)
+  -
+    var componentClass = 'icon';
+
+    function getSizeClass() {
+      if (!size) {
+        return `${componentClass}-md`;
+      }
+      return `${componentClass}-${size}`;
+    }
+
+  svg.icon(class!=[attributes.class, getSizeClass()].join(' '))
     use(xlink:href=`./sprite.svg#${name}`)
