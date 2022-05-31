@@ -1,4 +1,5 @@
 include ./src/components/icon
+include ./src/components/button
 
 doctype html
 head
@@ -17,4 +18,4 @@ head
       form.d-flex
         label.visually-hidden(for='rss-url') Ссылка RSS
         input#rss-url.form-control.me-6(placeholder='Ссылка RSS' type='text' name='rss-url')
-        button.btn.btn-lg.btn-primary Добавить
+        +button('Добавить', 'lg', 'primary')

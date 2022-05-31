@@ -1,0 +1,12 @@
+mixin button(text, size, type)
+  -
+    if (!size) {
+      size = 'md'
+    }
+    if (!type) {
+      type = 'primary'
+    }
+
+  button.btn(
+    class=`btn-${size} btn-${type}`
+  )= text
