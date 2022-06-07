@@ -1,17 +1,12 @@
-mixin icon(name, size)
+mixin icon(props)
   -
-    var componentClass = 'icon';
+    const {
+      name,
+      size = 'md',
+    } = props;
 
-    function getSizeClass() {
-      if (!size) {
-        return `${componentClass}-md`;
-      }
-      return `${componentClass}-${size}`;
-    }
-
-    function getClasses() {
-      return [attributes.class, getSizeClass()].join(' ');
-    }
-
-  svg.icon(class!=getClasses())
+  svg.icon(
+    class!=attributes.class
+    class=`icon-${size}`
+  )
     use(xlink:href=`./sprite.svg#${name}`)
