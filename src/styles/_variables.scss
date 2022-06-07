@@ -55,11 +55,11 @@ $border-radius: 0.25rem;
 
 $input-padding-y: 12px;
 $input-padding-x: 16px;
-$input-border-color: rgba($secondary, 0.16);
+$input-border-width: 0;
 
 $input-placeholder-color: $on-surface;
 $input-color: $on-surface;
 
-$input-focus-border-color: $primary;
-$input-focus-box-shadow: 0 0 0 1px $primary inset;
-$input-hover-border-color: rgba($secondary, 64);
+$input-box-shadow: 0 0 0 1px rgba($secondary, 0.16) inset;
+$input-hover-box-shadow: 0 0 0 1px rgba($secondary, 64) inset;
+$input-focus-box-shadow: 0 0 0 2px $primary inset;
