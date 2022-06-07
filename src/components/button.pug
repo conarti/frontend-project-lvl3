@@ -1,13 +1,17 @@
+include icon
+
 mixin button(props)
   -
     const {
       text,
       size = 'md',
       type = 'primary',
+      icon = null,
     } = props;
 
   button.btn(
     class=`btn-${size} btn-${type}`
   )
     = text
-    block
+    if icon
+      +icon({ name: icon })
