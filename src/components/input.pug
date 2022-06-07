@@ -1,0 +1,23 @@
+- const generateRandomId = () => Math.random().toString(36).replace(/[^a-z]+/g, '');
+
+mixin input(props)
+  -
+    const isLabelNotVisible = !Boolean(props.label);
+    const {
+      text,
+      id = generateRandomId(),
+      type = 'text',
+      label = props.text,
+      placeholder = props.text,
+    } = props;
+    const labelClass = isLabelNotVisible ? 'visually-hidden' : null;
+
+  label(
+    class=labelClass
+    for=id
+  )= label
+  input.form-control(
+    placeholder=placeholder
+    type=type
+    id=id
+  )&attributes(attributes)

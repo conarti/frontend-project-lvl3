@@ -1,5 +1,6 @@
-include ./src/components/icon
 include ./src/components/button
+include ./src/components/icon
+include ./src/components/input
 
 doctype html
 head
@@ -16,7 +17,7 @@ head
           span.lh-sm RSS агрегатор
         p.mb-5 Начните читать RSS сегодня! Это легко, это красиво.
       form.d-flex
-        label.visually-hidden(for='rss-url') Ссылка RSS
-        input#rss-url.form-control.me-4(placeholder='Ссылка RSS' type='text' name='rss-url')
+        .me-4.flex-grow-1
+          +input({ text: 'Ссылка RSS' })(name='rss-url')
         +button('Добавить', 'lg', 'primary')
           +icon('plus', 'sm')
