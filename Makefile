@@ -7,3 +7,6 @@ build:
 lint:
 	npm run lint:js
 	npm run lint:styles
+
+deploy:
+	vercel
