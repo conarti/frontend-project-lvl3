@@ -4,13 +4,15 @@ mixin button(props)
   -
     const {
       text,
-      size = 'md',
       type = 'primary',
+      size = null,
       icon = null,
     } = props;
 
   button.btn(
-    class=`btn-${size} btn-${type}`
+    class=`btn-${type}`
+    class=size ? `btn-${size}` : null
+    class=icon ? 'btn-icon' : null
   )
     = text
     if icon
