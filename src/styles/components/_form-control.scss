@@ -7,6 +7,8 @@
 
 	&::placeholder {
 		opacity: 0.32;
+
+		transition: $transition-fade;
 	}
 
 	&:focus {
