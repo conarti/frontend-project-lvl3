@@ -1,11 +1,10 @@
-mixin button(text, size, type)
+mixin button(props)
   -
-    if (!size) {
-      size = 'md'
-    }
-    if (!type) {
-      type = 'primary'
-    }
+    const {
+      text,
+      size = 'md',
+      type = 'primary',
+    } = props;
 
   button.btn(
     class=`btn-${size} btn-${type}`
