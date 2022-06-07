@@ -11,9 +11,7 @@
 	letter-spacing: 0.5px;
 	column-gap: 12px;
 
-	border-color: transparent;
-	border-style: solid;
-	border-width: 2px;
+	border: none;
 	border-radius: $border-radius;
 	outline: none;
 
@@ -66,8 +64,6 @@
 		color: rgba($on-surface, 0.32);
 
 		background: rgba($on-surface, 0.08);
-
-		border-color: transparent;
 
 		cursor: not-allowed;
 	}
