@@ -4,4 +4,4 @@
 [![Test Coverage](https://api.codeclimate.com/v1/badges/bb64ff2daad6e3307205/test_coverage)](https://codeclimate.com/github/conarti/frontend-project-lvl3/test_coverage)
 
 ### Deploy link
-https://frontend-project-lvl3.surge.sh/
+https://frontend-project-lvl3-conarti.vercel.app
