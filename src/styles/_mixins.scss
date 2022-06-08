@@ -83,6 +83,7 @@
 	line-height: 16px;
 	letter-spacing: 0.5px;
 }
+
 @mixin rss-btn-size-md() {
 	padding: 12px 24px;
 
@@ -97,4 +98,16 @@
 	font-size: 14px;
 	line-height: 20px;
 	letter-spacing: 0.1px;
+}
+
+@mixin rss-btn-size-icon-sm() {
+	padding: 4px 8px 4px 16px;
+}
+
+@mixin rss-btn-size-icon-md() {
+	padding: 8px 16px 8px 24px;
+}
+
+@mixin rss-btn-size-icon-lg() {
+	padding: 12px 24px 12px 32px;
 }
