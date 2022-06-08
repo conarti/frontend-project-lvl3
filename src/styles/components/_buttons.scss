@@ -37,6 +37,26 @@
 		padding: 12px 24px 12px 32px;
 	}
 
+	@each $breakpoint, $value in $grid-breakpoints {
+		&-#{$breakpoint}-sm {
+			@include media-breakpoint-up($breakpoint) {
+				@include rss-btn-size-sm;
+			}
+		}
+
+		&-#{$breakpoint}-md {
+			@include media-breakpoint-up($breakpoint) {
+				@include rss-btn-size-md;
+			}
+		}
+
+		&-#{$breakpoint}-lg {
+			@include media-breakpoint-up($breakpoint) {
+				@include rss-btn-size-lg;
+			}
+		}
+	}
+
 	&::after {
 		position: absolute;
 		top: -2px;
