@@ -56,6 +56,26 @@
 		}
 	}
 
+	@each $breakpoint, $value in $grid-breakpoints {
+		&-icon.btn-#{$breakpoint}-sm {
+			@include media-breakpoint-up($breakpoint) {
+				@include rss-btn-size-icon-sm;
+			}
+		}
+
+		&-icon.btn-#{$breakpoint}-md {
+			@include media-breakpoint-up($breakpoint) {
+				@include rss-btn-size-icon-md;
+			}
+		}
+
+		&-icon.btn-#{$breakpoint}-lg {
+			@include media-breakpoint-up($breakpoint) {
+				@include rss-btn-size-icon-lg;
+			}
+		}
+	}
+
 	&::after {
 		position: absolute;
 		top: -2px;
