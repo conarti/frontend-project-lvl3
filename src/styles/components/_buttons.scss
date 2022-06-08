@@ -8,6 +8,7 @@
 
 	font-weight: 600;
 	font-size: 12px;
+	line-height: 16px;
 	letter-spacing: 0.5px;
 	column-gap: 12px;
 
@@ -27,14 +28,6 @@
 
 	&-icon.btn-sm {
 		padding: 4px 8px 4px 16px;
-	}
-
-	&-md {
-		padding: 12px 24px;
-
-		font-size: 12px;
-		line-height: 16px;
-		letter-spacing: 0.5px;
 	}
 
 	&-icon,
