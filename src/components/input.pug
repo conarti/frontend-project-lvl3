@@ -9,15 +9,22 @@ mixin input(props)
       type = 'text',
       label = props.text,
       placeholder = props.text,
+      feedbacks = [],
     } = props;
     const labelClass = isLabelNotVisible ? 'visually-hidden' : null;
+    const hasNeutralFeedback = feedbacks.find(({ state }) => state === 'neutral') !== undefined;
 
   label(
     class=labelClass
     for=id
   )= label
   input.form-control(
+    class=hasNeutralFeedback ? 'is-neutral' : null
     placeholder=placeholder
     type=type
     id=id
   )&attributes(attributes)
+  each feedback in feedbacks
+    div(
+      class=`${feedback.state}-feedback`
+    )= feedback.message

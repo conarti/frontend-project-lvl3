@@ -19,7 +19,10 @@ $surface: #0e1a25;
 $secondary: #60809f;
 $on-primary: #021a31;
 $on-surface: #c7ccd1;
+$on-background: #e4e6e7;
 $on-primary-container: #d8e6f3;
+$success: #66cc77;
+$danger: #cc6666;
 
 $opacity-on-primary-08: rgba($on-primary, 0.08);
 $opacity-on-primary-16: rgba($on-primary, 0.16);
@@ -65,3 +68,26 @@ $input-color: $on-surface;
 $input-box-shadow: 0 0 0 1px rgba($secondary, 0.16) inset;
 $input-hover-box-shadow: 0 0 0 1px rgba($secondary, 64) inset;
 $input-focus-box-shadow: 0 0 0 2px $primary inset;
+
+$form-feedback-margin-top: map-get($spacers, 1);
+$form-feedback-padding-start: map-get($spacers, 3);
+$form-feedback-font-size: 12px;
+$form-feedback-icon-size: 16px;
+
+$form-validation-states: (
+	neutral: (
+		color: rgba($on-background, 0.16),
+		box-shadow: $input-box-shadow,
+		focus-box-shadow: $input-focus-box-shadow,
+	),
+	valid: (
+		color: $body-color,
+		icon: url('data:image/svg+xml,<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="#{$success}" fill-rule="evenodd" clip-rule="evenodd" d="M8 15C11.866 15 15 11.866 15 8C15 4.13401 11.866 1 8 1C4.13401 1 1 4.13401 1 8C1 11.866 4.13401 15 8 15ZM11.7088 7.20537L8.36693 10.5637C7.89977 11.0332 7.14061 11.0354 6.6707 10.5687L4.59063 8.50484L6 7.0858L7.513 8.58647L10.2912 5.79463L11.7088 7.20537Z"/></svg>'),
+		box-shadow: 0 0 0 1px $success inset,
+		focus-box-shadow: 0 0 0 2px $success inset,
+	),
+	invalid: (
+		color: $danger,
+		icon: url('data:image/svg+xml,<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="#{$danger}" fill-rule="evenodd" clip-rule="evenodd" d="M1.0953 12.938L7.41154 2.34742C7.67551 1.88419 8.32449 1.88419 8.58846 2.34742L14.9047 12.938C15.1724 13.4078 14.8443 14 14.3162 14H1.68376C1.15573 14 0.827576 13.4078 1.0953 12.938ZM7 5H9V9H7V5ZM9 10H7V12H9V10Z"/></svg>'),
+	),
+);
