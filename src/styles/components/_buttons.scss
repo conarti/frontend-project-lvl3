@@ -4,12 +4,8 @@
 
 	display: inline-flex;
 	align-items: center;
-	padding: 12px 24px;
 
 	font-weight: 600;
-	font-size: 12px;
-	line-height: 16px;
-	letter-spacing: 0.5px;
 	column-gap: 12px;
 
 	border: none;
@@ -18,12 +14,10 @@
 
 	transition: $transition-base;
 
-	&-sm {
-		padding: 8px 16px;
+	@include rss-btn-size-md;
 
-		font-size: 11px;
-		line-height: 16px;
-		letter-spacing: 0.5px;
+	&-sm {
+		@include rss-btn-size-sm;
 	}
 
 	&-icon.btn-sm {
@@ -36,11 +30,7 @@
 	}
 
 	&-lg {
-		padding: 14px 32px;
-
-		font-size: 14px;
-		line-height: 20px;
-		letter-spacing: 0.1px;
+		@include rss-btn-size-lg;
 	}
 
 	&-icon.btn-lg {
