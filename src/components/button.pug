@@ -7,6 +7,7 @@ mixin button(props)
       type = 'primary',
       size = null,
       icon = null,
+      type = null,
     } = props;
 
   button.btn(
@@ -14,6 +15,7 @@ mixin button(props)
     class=size ? `btn-${size}` : null
     class=icon ? 'btn-icon' : null
     class!=attributes.class
+    type=type
   )
     span.btn-text= text
     if icon
