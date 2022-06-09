@@ -8,34 +8,35 @@ head
   meta(name='viewport' content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0')
   meta(http-equiv='X-UA-Compatible' content='ie=edge')
   title RSS агрегатор
-.container
-  .row.justify-content-center.vh-100
-    header.col.col-sm-8.col-lg-6.my-auto
-      div
-        h1.d-flex.align-items-center.mb-1
-          +icon({ name: 'rss-icon-lg', size: 'lg' })
-          span.lh-sm RSS агрегатор
-        p.mb-5 Начните читать RSS сегодня! Это легко, это красиво.
-      form.d-flex.align-items-start
-        .me-4.flex-grow-1
-          +input({
-            text: 'Ссылка RSS',
-            feedbacks: [
-              {
-                state: 'valid',
-                message: 'RSS успешно загружен',
-              },
-              {
-                state: 'invalid',
-                message: 'Ссылка должна быть валидным URL',
-              },
-              {
-                state: 'neutral',
-                message: 'Пример: https://ru.hexlet.io/lessons.rss',
-              },
-            ]
-          })(name='rss-url')
-        +button({
-          text: 'Добавить',
-          icon: 'plus',
-        })(class='btn-sm btn-lg-lg')
+body
+  .container
+    .row.justify-content-center.vh-100
+      header.col.col-sm-8.col-lg-6.my-auto
+        div
+          h1.d-flex.align-items-center.mb-1
+            +icon({ name: 'rss-icon-lg', size: 'lg' })
+            span.lh-sm RSS агрегатор
+          p.mb-5 Начните читать RSS сегодня! Это легко, это красиво.
+        form.d-flex.align-items-start
+          .me-4.flex-grow-1
+            +input({
+              text: 'Ссылка RSS',
+              feedbacks: [
+                {
+                  state: 'valid',
+                  message: 'RSS успешно загружен',
+                },
+                {
+                  state: 'invalid',
+                  message: 'Ссылка должна быть валидным URL',
+                },
+                {
+                  state: 'neutral',
+                  message: 'Пример: https://ru.hexlet.io/lessons.rss',
+                },
+              ]
+            })(name='rss-url')
+          +button({
+            text: 'Добавить',
+            icon: 'plus',
+          })(class='btn-sm btn-lg-lg')
