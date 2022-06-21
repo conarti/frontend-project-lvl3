@@ -8,13 +8,14 @@ mixin button(props)
       size = null,
       icon = null,
       type = null,
+      className = null,
     } = props;
 
   button.btn(
     class=`btn-${style}`
     class=size ? `btn-${size}` : null
     class=icon ? 'btn-icon' : null
-    class!=attributes.class
+    class=className
     type=type
   )
     span.btn-text= text
