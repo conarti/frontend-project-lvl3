@@ -111,3 +111,15 @@
 @mixin rss-btn-size-text-with-icon-lg() {
 	padding: 12px 24px 12px 32px;
 }
+
+@mixin rss-btn-size-icon-sm() {
+	padding: 4px;
+}
+
+@mixin rss-btn-size-icon-md() {
+	padding: 8px;
+}
+
+@mixin rss-btn-size-icon-lg() {
+	padding: 12px;
+}
