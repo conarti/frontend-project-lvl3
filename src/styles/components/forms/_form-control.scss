@@ -1,6 +1,12 @@
 .form-control {
 	box-shadow: $input-box-shadow;
 
+	@include rss-form-control-size-sm;
+
+	@include media-breakpoint-up(lg) {
+		@include rss-form-control-size-md;
+	}
+
 	&:hover {
 		box-shadow: $input-hover-box-shadow;
 	}

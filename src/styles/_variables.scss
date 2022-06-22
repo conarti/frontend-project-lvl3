@@ -66,6 +66,9 @@ $input-padding-y: 12px;
 $input-padding-x: 16px;
 $input-border-width: 0;
 
+$input-padding-y-sm: map-get($spacers, 3);
+$input-padding-x-sm: map-get($spacers, 3);
+
 $input-placeholder-color: $on-surface;
 $input-color: $on-surface;
 

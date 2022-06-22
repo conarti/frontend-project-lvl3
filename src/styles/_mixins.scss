@@ -72,6 +72,12 @@
 	@include rss-form-validation-state-selector($state) {
 		~ .#{$state}-feedback {
 			display: block;
+
+			font-size: $font-size-sm;
+
+			@include media-breakpoint-up(lg) {
+				font-size: $font-size-base;
+			}
 		}
 	}
 }
@@ -122,4 +128,18 @@
 
 @mixin rss-btn-size-icon-lg() {
 	padding: 12px;
+}
+
+@mixin rss-form-control-size-sm() {
+	min-height: $input-height-sm;
+	padding: $input-padding-y-sm $input-padding-x-sm;
+	@include font-size($input-font-size-sm);
+	@include border-radius($input-border-radius-sm);
+}
+
+@mixin rss-form-control-size-md() {
+	min-height: $input-height;
+	padding: $input-padding-y $input-padding-x;
+	@include font-size($input-font-size);
+	@include border-radius($input-border-radius);
 }
