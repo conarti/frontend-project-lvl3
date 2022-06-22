@@ -1,0 +1,7 @@
+h1 {
+	font-size: $h1-font-size-mobile;
+
+	@include media-breakpoint-up(lg) {
+		font-size: $h1-font-size;
+	}
+}
