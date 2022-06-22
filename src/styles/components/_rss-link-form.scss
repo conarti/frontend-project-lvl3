@@ -1,0 +1,37 @@
+.rss-link-form {
+	&-btn {
+		@include rss-btn-size-icon-sm;
+
+		@include media-breakpoint-up(sm) {
+			@include rss-btn-size-text-with-icon-sm;
+		}
+
+		@include media-breakpoint-up(md) {
+			@include rss-btn-size-icon-sm;
+		}
+
+		@include media-breakpoint-up(lg) {
+			@include rss-btn-size-icon-lg;
+		}
+
+		@include media-breakpoint-up(xl) {
+			@include rss-btn-size-text-with-icon-lg;
+		}
+	}
+
+	&-btn .btn-text {
+		display: none;
+
+		@include media-breakpoint-up(sm) {
+			display: inline;
+		}
+
+		@include media-breakpoint-up(md) {
+			display: none;
+		}
+
+		@include media-breakpoint-up(xl) {
+			display: inline;
+		}
+	}
+}

@@ -17,7 +17,7 @@ body
             +icon({ name: 'rss-icon-lg', size: 'lg' })
             span.lh-sm RSS агрегатор
           p.mb-5 Начните читать RSS сегодня! Это легко, это красиво.
-        form.d-flex.align-items-start
+        form.rss-link-form.d-flex.align-items-start
           .me-4.flex-grow-1
             +input({
               text: 'Ссылка RSS',
@@ -37,7 +37,7 @@ body
               ]
             })(name='rss-url')
           +button({
-            className: 'btn-sm btn-lg-lg',
+            className: 'rss-link-form-btn',
             text: 'Добавить',
             icon: 'plus',
             type: 'submit'
