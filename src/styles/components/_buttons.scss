@@ -14,44 +14,44 @@
 
 	transition: $transition-base;
 
-	@include rss-btn-size-md;
+	@include rss-btn-size-text-md;
 
 	&-sm {
-		@include rss-btn-size-sm;
+		@include rss-btn-size-text-sm;
 	}
 
 	&-icon.btn-sm {
-		@include rss-btn-size-icon-sm;
+		@include rss-btn-size-text-with-icon-sm;
 	}
 
 	&-icon {
-		@include rss-btn-size-icon-md;
+		@include rss-btn-size-text-with-icon-md;
 	}
 
 	&-lg {
-		@include rss-btn-size-lg;
+		@include rss-btn-size-text-lg;
 	}
 
 	&-icon.btn-lg {
-		@include rss-btn-size-icon-lg;
+		@include rss-btn-size-text-with-icon-lg;
 	}
 
 	@each $breakpoint, $value in $grid-breakpoints {
 		&-#{$breakpoint}-sm {
 			@include media-breakpoint-up($breakpoint) {
-				@include rss-btn-size-sm;
+				@include rss-btn-size-text-sm;
 			}
 		}
 
 		&-#{$breakpoint}-md {
 			@include media-breakpoint-up($breakpoint) {
-				@include rss-btn-size-md;
+				@include rss-btn-size-text-md;
 			}
 		}
 
 		&-#{$breakpoint}-lg {
 			@include media-breakpoint-up($breakpoint) {
-				@include rss-btn-size-lg;
+				@include rss-btn-size-text-lg;
 			}
 		}
 	}
@@ -59,19 +59,19 @@
 	@each $breakpoint, $value in $grid-breakpoints {
 		&-icon.btn-#{$breakpoint}-sm {
 			@include media-breakpoint-up($breakpoint) {
-				@include rss-btn-size-icon-sm;
+				@include rss-btn-size-text-with-icon-sm;
 			}
 		}
 
 		&-icon.btn-#{$breakpoint}-md {
 			@include media-breakpoint-up($breakpoint) {
-				@include rss-btn-size-icon-md;
+				@include rss-btn-size-text-with-icon-md;
 			}
 		}
 
 		&-icon.btn-#{$breakpoint}-lg {
 			@include media-breakpoint-up($breakpoint) {
-				@include rss-btn-size-icon-lg;
+				@include rss-btn-size-text-with-icon-lg;
 			}
 		}
 	}

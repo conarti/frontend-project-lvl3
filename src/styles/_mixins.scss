@@ -76,7 +76,7 @@
 	}
 }
 
-@mixin rss-btn-size-sm() {
+@mixin rss-btn-size-text-sm() {
 	padding: 8px 16px;
 
 	font-size: 11px;
@@ -84,7 +84,7 @@
 	letter-spacing: 0.5px;
 }
 
-@mixin rss-btn-size-md() {
+@mixin rss-btn-size-text-md() {
 	padding: 12px 24px;
 
 	font-size: 12px;
@@ -92,7 +92,7 @@
 	letter-spacing: 0.5px;
 }
 
-@mixin rss-btn-size-lg() {
+@mixin rss-btn-size-text-lg() {
 	padding: 14px 32px;
 
 	font-size: 14px;
@@ -100,14 +100,14 @@
 	letter-spacing: 0.1px;
 }
 
-@mixin rss-btn-size-icon-sm() {
+@mixin rss-btn-size-text-with-icon-sm() {
 	padding: 4px 8px 4px 16px;
 }
 
-@mixin rss-btn-size-icon-md() {
+@mixin rss-btn-size-text-with-icon-md() {
 	padding: 8px 16px 8px 24px;
 }
 
-@mixin rss-btn-size-icon-lg() {
+@mixin rss-btn-size-text-with-icon-lg() {
 	padding: 12px 24px 12px 32px;
 }
